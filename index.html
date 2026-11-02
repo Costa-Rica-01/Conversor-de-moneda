@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Monedas</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="container">
+  <h1>💱 Conversor</h1>
+  <p class="subtitle">Tipo de cambio en tiempo real</p>
+
+  <div class="card">
+    <div class="input-group">
+      <label>Cantidad</label>
+      <input type="number" id="amount" value="1" min="0">
+    </div>
+
+    <div class="row">
+      <div class="input-group">
+        <label>De</label>
+        <select id="from">
+          <option value="USD">USD - Dólar</option>
+          <option value="CRC" selected>CRC - Colón CR</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="MXN">MXN - Peso Mexicano</option>
+          <option value="COP">COP - Peso Colombiano</option>
+          <option value="GTQ">GTQ - Quetzal</option>
+        </select>
+      </div>
+
+      <button id="swapBtn">⇄</button>
+
+      <div class="input-group">
+        <label>A</label>
+        <select id="to">
+          <option value="CRC">CRC - Colón CR</option>
+          <option value="USD" selected>USD - Dólar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="MXN">MXN - Peso Mexicano</option>
+          <option value="COP">COP - Peso Colombiano</option>
+          <option value="GTQ">GTQ - Quetzal</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="result" id="result">Cargando...</div>
+    <div class="rate-info" id="rateInfo"></div>
+  </div>
+
+  <button id="printBtn">🖨️ Print Page</button>
+</div>
+
+<script src="erick.js"></script>
+</body>
+</html>
+
